@@ -1,20 +1,17 @@
+import java.io.IOException;
 import java.util.Scanner;
-//Edmilson Batista
+
 public class Soma {
-	//public class Main {
 
-	public static void main(String args[]) {
+	public static void main(String[] args) throws IOException {
 
-		Scanner ler = new Scanner(System.in);
-		int a;
-		int b;
-		int soma;
-
-		a = ler.nextInt();
-		b = ler.nextInt();
-		
-		soma = a + b;
-		
-		System.out.print("SOMA = " + soma);
-	}
-}
+    		Scanner input = new Scanner(System.in);
+    		int a, b, soma;
+    		a = input.nextInt();
+    		b = input.nextInt();
+    		
+    		soma = a + b;
+    		
+    		System.out.print("SOMA = " + soma);
+    	}
+    }

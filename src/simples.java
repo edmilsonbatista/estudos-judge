@@ -1,20 +1,20 @@
-import java.io.IOException;
-import java.util.Scanner;
-
-public class simples {
-
-//public class Main {
- 
-    public static void main(String[] args) throws IOException {
-		
-		Scanner input = new Scanner(System.in);
-		int num1, num2, x;
-
-		num1 = input.nextInt();
-		num2 = input.nextInt();
-		
-		x = num1 + num2;
-		
-		System.out.print("X = " + x);
+	import java.io.IOException;
+	import java.util.Scanner;
+	
+	public class simples {
+	
+	//public class Main {
+	 
+	    public static void main(String[] args) throws IOException {
+			
+			Scanner input = new Scanner(System.in);
+			int A, B, X;
+	
+			A = input.nextInt();
+			B = input.nextInt();
+			
+			X = A + B;
+			
+			System.out.print("X = " + X);
+		}
 	}
-}
