@@ -5,12 +5,12 @@ public class Prod {
     public static void main(String[] args) throws IOException {
  
 		Scanner input = new Scanner(System.in);
-		int x, y, prod;
+		int x, Y, prod;
 
 		x = input.nextInt();
-		y = input.nextInt();
+		Y = input.nextInt();
 
-		prod = x * y;
+		prod = x * Y;
 		System.out.println("PROD = " + prod);
 
     }
