@@ -11,6 +11,6 @@ public class Soma {
     
     		valor1 = valor1 + valor2;
     		    		
-    		System.out.println("X = " + valor1);
+    		System.out.println("SOMA = " + valor1);
     	}
     }
