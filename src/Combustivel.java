@@ -1,26 +1,23 @@
 import java.io.IOException;
+import java.rmi.registry.LocateRegistry;
 import java.text.DecimalFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Combustivel {
 	public static void main(String[] args) throws IOException {
+			
+			Locale.setDefault(Locale.US);    		
+			DecimalFormat df = new DecimalFormat("0.000");
 
-    		Scanner input = new Scanner(System.in);	
-    		DecimalFormat df = new DecimalFormat("0.00");
-    		int CODIGO1, PECAS1;
-    		int CODIGO2, PECAS2;
-    		double VALOR1, VALOR2, VALOR;
+    		Scanner input = new Scanner(System.in);
     		
-    		CODIGO1 = input.nextInt();
-    		PECAS1 = input.nextInt();
-    		VALOR1 = input.nextDouble();
-    		CODIGO2 = input.nextInt();
-    		PECAS2 = input.nextInt();
-    		VALOR2 = input.nextDouble();
+    		double valor1 = input.nextDouble();
+    		double valor2 = input.nextDouble();
+    	    		   		
+    		valor1 = valor1*valor2;
+    		valor1 = valor1/12;
     		
-    		VALOR = PECAS1*VALOR1+PECAS2*VALOR2;
-    		
-    		System.out.print("VALOR A PAGAR : R$" + df.format(VALOR));
-    		
+    		System.out.print(df.format(valor1));		
 	}
 }
