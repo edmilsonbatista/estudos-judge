@@ -1,21 +1,21 @@
 import java.io.IOException;
 import java.text.DecimalFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Media2 {
-
 	public static void main(String[] args) throws IOException {
-
-    		Scanner input = new Scanner(System.in);
-    		DecimalFormat df = new DecimalFormat("0,0");
-    		
-    		double A, B, C, MEDIA;
-    		A = input.nextDouble();
-    		B = input.nextDouble();
-    		C = input.nextDouble();
-    		
-    		MEDIA = (A*2 + B*3 + C*5)/10;
-    		
-    		System.out.print("MEDIA = " + df.format(MEDIA));
-    	}
-    }
+			
+		Locale.setDefault(Locale.US);   
+		Scanner input = new Scanner(System.in);
+		DecimalFormat df = new DecimalFormat("0.0");
+		
+		double nota1 = input.nextDouble();
+		double nota2 = input.nextDouble();
+		double nota3 = input.nextDouble();
+		
+		nota1 = (nota1*2+nota2*3+nota3*5)/10;    		 
+		
+		System.out.print("MEDIA = " + df.format(nota1) + "\n");
+	}
+}
