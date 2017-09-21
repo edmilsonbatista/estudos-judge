@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 import static java.lang.Math.abs;
 
-public class Main {
+public class Distancia {
 	public static void main(String[] args) throws IOException {
 			
 			Locale.setDefault(Locale.US);    		

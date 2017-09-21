@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 import static java.lang.Math.abs;
 
-public class Main {
+public class ConversaoTempo {
 	public static void main(String[] args) throws IOException {
 			
     		Scanner input = new Scanner(System.in);
