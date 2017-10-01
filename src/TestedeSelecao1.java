@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class TestedeSelecao1 {
+public class TestedeSelecao1	 {
 
 	public static void main(String args[]) throws IOException {
 
